@@ -1,63 +1,182 @@
-<!doctype html>
-<html ⚡>
-    <head>
-        <meta charset="utf-8">
-        <title>Portofolio App</title>
-        <link rel="canonical" href="./regular-html-version.html">
-        <meta name="viewport" content="width=device-width,minimum-scale=1,initial-scale=1">
-        <style amp-custom>
-            h1 {color: red}
-        </style>
-        <script type="application/ld+json">
-        {
-            "@context": "http://schema.org",
-            "@type": "NewsArticle",
-            "headline": "Article headline",
-            "image": [
-                "thumbnail1.jpg"
-            ],
-            "datePublished": "2015-02-05T08:00:00+08:00"
-        }
-        </script>
-        <script async custom-element="amp-carousel" src="https://cdn.ampproject.org/v0/amp-carousel-0.1.js"></script>
-        <style amp-boilerplate>body{-webkit-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-moz-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-ms-animation:-amp-start 8s steps(1,end) 0s 1 normal both;animation:-amp-start 8s steps(1,end) 0s 1 normal both}@-webkit-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-moz-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-ms-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-o-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}</style><noscript><style amp-boilerplate>body{-webkit-animation:none;-moz-animation:none;-ms-animation:none;animation:none}</style></noscript>
-        <script async src="https://cdn.ampproject.org/v0.js"></script>
-    </head>
-    <body>
-        <h1>Wellcome to Portofolio App</h1>
-        <p>
-            Some text
-            <amp-img src=sample.jpg width=300 height=300></amp-img>
-        </p>
-        <amp-ad width=300 height=250
-                type="a9"
-                data-aax_size="300x250"
-                data-aax_pubname="test123"
-                data-aax_src="302">
-        </amp-ad>
+<!DOCTYPE html>
+<html amp lang="en">
 
-        <script type="module">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, minimum-scale=1, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="Description" content="Membuat Portofolio jadi lebih mudah" />
+    <meta property="og:title" content="Portofolio App" />
+    <meta property="og:url" content="portofolioapp.my.id" />
+    <meta property="og:description" content="Membuat Portofolio jadi lebih mudah" />
+    <meta property="og:type" content="website">
+    <link rel="canonical" href="./regular-html-version.html">
+    <title>Portofolio App</title>
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <link rel="manifest" href="/manifest.json">
+    <script async src="https://cdn.ampproject.org/v0.js"></script>
+    <style amp-boilerplate>
+        body {
+            -webkit-animation: -amp-start 8s steps(1, end) 0s 1 normal both;
+            -moz-animation: -amp-start 8s steps(1, end) 0s 1 normal both;
+            -ms-animation: -amp-start 8s steps(1, end) 0s 1 normal both;
+            animation: -amp-start 8s steps(1, end) 0s 1 normal both
+        }
+    
+        @-webkit-keyframes -amp-start {
+            from {
+                visibility: hidden
+            }
+    
+            to {
+                visibility: visible
+            }
+        }
+    
+        @-moz-keyframes -amp-start {
+            from {
+                visibility: hidden
+            }
+    
+            to {
+                visibility: visible
+            }
+        }
+    
+        @-ms-keyframes -amp-start {
+            from {
+                visibility: hidden
+            }
+    
+            to {
+                visibility: visible
+            }
+        }
+    
+        @-o-keyframes -amp-start {
+            from {
+                visibility: hidden
+            }
+    
+            to {
+                visibility: visible
+            }
+        }
+    
+        @keyframes -amp-start {
+            from {
+                visibility: hidden
+            }
+    
+            to {
+                visibility: visible
+            }
+        }
+    </style><noscript>
+        <style amp-boilerplate>
+            body {
+                -webkit-animation: none;
+                -moz-animation: none;
+                -ms-animation: none;
+                animation: none
+            }
+        </style>
+    </noscript>
+    <style amp-custom>
+    </style>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootswatch/5.1.0/cosmo/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <title>Title</title>
+    </head>
+
+<body>
+<nav class="navbar navbar-dark bg-dark navbar-expand-lg">
+    <!-- Navbar content -->
+    <div class="container-fluid">
+        <a class="navbar-brand" href="/">Portofolio App</a>
+
+
+
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
+            aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse justify-content-end" id="navbarNavDropdown">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">About</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">CV</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button"
+                        data-bs-toggle="dropdown" aria-expanded="false">
+                        Setting
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                        <li><a class="dropdown-item" href="#">Profile</a></li>
+                        <li><a class="dropdown-item" href="#">Edit</a></li>
+                        <li><a class="dropdown-item" href="#">Sign Out</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+</nav>
+
+<amp-layout class="bg-dark">
+
+</amp-layout>
+
+
+
+</div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.9.2/umd/popper.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.1.0/js/bootstrap.min.js"></script>
+    <script type="module">
             // Import the functions you need from the SDKs you need
-            import { initializeApp } from "https://www.gstatic.com/firebasejs/9.6.1/firebase-app.js";
-            import { getAnalytics } from "https://www.gstatic.com/firebasejs/9.6.1/firebase-analytics.js";
+                                                                                                import {
+                                                                                                    initializeApp
+                                                                                                } from "https://www.gstatic.com/firebasejs/9.6.1/firebase-app.js";
+                                                                                                import {
+                                                                                                    getAnalytics
+                                                                                                } from "https://www.gstatic.com/firebasejs/9.6.1/firebase-analytics.js";
             // TODO: Add SDKs for Firebase products that you want to use
             // https://firebase.google.com/docs/web/setup#available-libraries
-          
+
             // Your web app's Firebase configuration
             // For Firebase JS SDK v7.20.0 and later, measurementId is optional
             const firebaseConfig = {
-              apiKey: "AIzaSyA3NfNhT-DIfzlIzJTJDjPRbHQe24ZIsSY",
-              authDomain: "portofolio-jb01.firebaseapp.com",
-              projectId: "portofolio-jb01",
-              storageBucket: "portofolio-jb01.appspot.com",
-              messagingSenderId: "375564265468",
-              appId: "1:375564265468:web:09775120a888963aa63479",
-              measurementId: "G-2NB6BEDDRP"
+                apiKey: "AIzaSyA3NfNhT-DIfzlIzJTJDjPRbHQe24ZIsSY",
+                authDomain: "portofolio-jb01.firebaseapp.com",
+                projectId: "portofolio-jb01",
+                storageBucket: "portofolio-jb01.appspot.com",
+                messagingSenderId: "375564265468",
+                appId: "1:375564265468:web:09775120a888963aa63479",
+                measurementId: "G-2NB6BEDDRP"
             };
-          
+
             // Initialize Firebase
             const app = initializeApp(firebaseConfig);
             const analytics = getAnalytics(app);
-          </script>
-    </body>
+</script>
+    <script>
+        if ('serviceWorker' in navigator) {
+            window.addEventListener('load', () => {
+                navigator.serviceWorker.register('./service-worker.js')
+                    .then(() => {
+                        console.log('[ Hey there! ] Service Worker Registered');
+                    });
+            });
+        }
+    </script>
+</body>
+
 </html>
